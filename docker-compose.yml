@@ -1,0 +1,12 @@
+version: '3'
+services:
+#chnage your 
+  kang:
+    #image: it for name your image after docker build -t nameyourimages .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+    #change to your
+      - 50002:3000
